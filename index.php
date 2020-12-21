@@ -23,7 +23,7 @@ require __DIR__ . '/vendor/autoload.php';
 <body>
 
 	<blockquote>
-		Hello World!
+		Hello World, 2!
 	</blockquote>
 
 </body>
