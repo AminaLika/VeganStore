@@ -1,0 +1,61 @@
+/*!
+ * Author: MaxAl
+ * Author URI: https://max.al
+ * Developer: Dajan Vulaj
+ * UI/UX Designer: Dorjan Vulaj @thedsgnr
+ * Version: 1.0.0
+ */
+
+// Fonts
+	@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,500,700');
+
+//NodeJS Packages
+	// Bootstrap
+	@import '~bootstrap/scss/bootstrap';
+
+
+// NonPointing Helpers
+	@import './helpers/functions';
+	@import './helpers/variables';
+	@import './helpers/mixins';
+
+
+/* Css style goes here */
+	html {
+		// Footer Always on bottom
+		// height: 100%;
+		// box-sizing: border-box;
+		body {
+			// Footer Always on bottom
+			// Footer must be position:absolute
+			// position: relative;
+			// padding-bottom: 110px !important; 
+			// overflow-x:hidden;
+			line-height: map-get($defaults, 'line-height');
+			font-size: map-get($defaults, 'font-size');
+			
+			margin: 0;
+			padding:0px;
+
+		}
+	}
+
+	//Pointing Helpers [utilities]
+	@import './helpers/utilities';
+	
+	// Objects
+	//@import './objects/_demo_object/style';
+	@import './objects/buttons/style';
+
+	// Layouts
+	//@import './layouts/_demo_layout/style';
+	
+
+	// Pages
+	//@import './pages/_demo_page/style';
+
+
+	@import './helpers/media';
+
+	
+	

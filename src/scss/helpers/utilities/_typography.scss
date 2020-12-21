@@ -1,0 +1,26 @@
+
+//Generate Font Classes
+@include generate_font_classes_per_breakpoint ('default');
+
+//Text Colors
+@each $element, $color in $colors {
+	.color-#{$element} {
+		color: $color;
+	}
+
+	.hover-color-#{$element} {
+		&:hover {
+			color: $color;
+		}
+	}
+
+	.bg-#{$element} {
+		background-color: $color;
+	}
+
+	.hover-bg-#{$element} {
+		&:hover {
+			background-color: $color;
+		}
+	}
+}
