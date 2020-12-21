@@ -13,9 +13,9 @@ require __DIR__ . '/vendor/autoload.php';
 
 
 	<!-- Main -->
-	<link href='<?php echo mix('css/app.css', '/subDirectory'); ?>' rel='stylesheet' type='text/css'>
+	<link href='<?php echo mix('css/app.css', '/website2'); ?>' rel='stylesheet' type='text/css'>
 	<!-- Javascript -->
-	<script src='<?php echo mix('js/app.js', '/subDirectory'); ?>' type='text/javascript'></script>
+	<script src='<?php echo mix('js/app.js', '/website2'); ?>' type='text/javascript'></script>
 
 
 </head>
