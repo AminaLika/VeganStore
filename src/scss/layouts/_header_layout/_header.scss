@@ -1,0 +1,71 @@
+// Helpers
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
+// Objects
+//@import './objects/buttons/style';
+
+@import "./helpers/media";
+
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  // height: 657px;
+  overflow: hidden;
+  .below_header {
+    position: absolute;
+    width: 100%;
+    min-height: 100vh;
+    right: 0;
+    z-index: 11;
+  }
+  .header_overlay {
+    z-index: 22;
+    position: absolute;
+    top: 77px;
+    left: 0;
+    background-color: #f7f7f7;
+    opacity: 0.5;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .header_description {
+    position: absolute;
+    top: 235px;
+    z-index: 23;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    .header_title {
+      text-align: center;
+      .title {
+        color: #000000;
+        letter-spacing: 0.2em;
+        padding-bottom: 1.5rem;
+        @font-face {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 600;
+          src: url(https://fonts.gstatic.com/s/poppins/v15/pxiByp8kv8JHgFVrLEj6Z1xlFQ.woff2)
+            format("woff2");
+        }
+        line-height: 1.2;
+      }
+      .below_title {
+        @font-face {
+          font-family: "Poppins", sans-serif;
+          src: url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+        }
+        color: #8b8b99;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+      }
+    }
+  }
+}

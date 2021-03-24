@@ -1,0 +1,111 @@
+// Helpers
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
+// Objects
+//@import './objects/buttons/style';
+
+@import "./helpers/media";
+
+.our_shop {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #fff;
+  .shop {
+    .below_shop {
+      justify-content: center;
+      .main_col {
+        text-align: center;
+        .shop_description {
+          .subtitle {
+            line-height: 1.3;
+            color: #91ac41;
+            margin-bottom: 0;
+            font-family: "Caveat", cursive;
+            font-size: 1.5rem;
+            margin: 32px 0px 0px;
+          }
+          .title {
+            color: #000;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+          }
+          .text {
+            color: #8b8b99;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-size: 1rem;
+            line-height: 1.6;
+            max-width: 43rem;
+            margin: auto auto 3.4rem auto;
+          }
+        }
+        .team {
+          justify-content: center;
+          margin-top: 3rem;
+          margin-bottom: 2rem;
+          flex-wrap: wrap;
+          .below_team {
+            justify-content: center;
+            .member1,
+            .member2,
+            .member3 {
+              .card_wrapper {
+                padding: 2.5rem 1.875rem;
+                background-color: #f5f6fb;
+                border-radius: 45px 0 45px 45px;
+                margin-bottom: 1.25rem;
+                width: 100%;
+                transition: all 0.3s;
+                .member_img {
+                  margin-bottom: 1.5625rem;
+                  justify-content: center;
+                  display: flex;
+                  text-align: center;
+                  flex-shrink: 0;
+                  img {
+                    border-radius: 50%;
+                    height: 5rem;
+                    width: 5rem;
+                    overflow: hidden;
+                    z-index: 100;
+                  }
+                }
+                .member_info {
+                  font-family: "Poppins", sans-serif;
+                  font-size: 0.875rem;
+                  font-style: italic;
+                  margin-bottom: 2rem;
+                  text-align: center;
+                  letter-spacing: 0.5px;
+                  line-height: 1.7;
+                  color: #8b8b99;
+                }
+                .member_id {
+                  .name {
+                    text-transform: uppercase;
+                    font-family: "Poppins", sans-serif;
+                    font-size: 1rem;
+                    font-weight: 600;
+                    margin: auto;
+                  }
+                  .position {
+                    font-family: "Poppins", sans-serif;
+                    font-size: 0.75rem;
+                    font-style: italic;
+                    line-height: 1.6;
+                    margin-bottom: 1.2rem;
+                    color: #8b8b99;
+                  }
+                }
+              }
+            }
+          }
+          .member2 {
+            margin-top: 25px;
+          }
+        }
+      }
+    }
+  }
+}

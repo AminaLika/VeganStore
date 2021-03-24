@@ -1,0 +1,113 @@
+// Helpers
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
+// Objects
+//@import './objects/buttons/style';
+
+@import "./helpers/media";
+
+.rating {
+  padding-top: 45px;
+  padding-bottom: 60px;
+  background-color: #f6fcfa;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  .rate {
+    margin-top: 32px;
+    .below_rating {
+      .rate1,
+      .rate2,
+      .rate3,
+      .rate4 {
+        margin: 1.25rem auto;
+        padding: 0px 15px;
+        .number {
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          line-height: 1.3;
+          color: #000000;
+          margin: 58.5px 0px 8px;
+        }
+        .number_description {
+          font-family: "Poppins", sans-serif;
+          font-size: 14px;
+          color: #57e3b5;
+          font-style: italic;
+        }
+      }
+    }
+  }
+}
+
+.video {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #ffffff;
+  text-align: center;
+  .video_title {
+    color: #8b8b99;
+    margin: 0px 0px 16px;
+  }
+  .underline {
+    margin-left: auto;
+    margin-right: auto;
+    width: 5rem;
+    height: 1px;
+    display: inline-block;
+    background-color: #e4b476;
+  }
+  .underline:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+  }
+  .vimeo_video {
+    .below_video {
+      .video1 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: auto;
+        width: 100%;
+        .picc {
+          height: auto;
+          width: 70%;
+        }
+      }
+      .pic_veggies {
+        position: relative;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        margin: auto;
+        width: 100%;
+        .picc1 {
+          height: auto;
+          width: 70%;
+        }
+        .desc {
+          z-index: 11;
+          position: relative;
+          font-family: "Poppins", sans-serif;
+          font-size: 0.875rem;
+          line-height: 1.6;
+          color: #ffffff;
+          bottom: 30px;
+        }
+        .pic_description {
+          text-align: center;
+          justify-content: center;
+          position: absolute;
+          bottom: 66px;
+          right: 0;
+          left: 0;
+          width: 70%;
+          margin: auto;
+          height: 40px;
+          background: #bbd966;
+          opacity: 0.3;
+          padding: 0.5rem 1rem;
+        }
+      }
+    }
+  }
+}

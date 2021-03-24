@@ -1,0 +1,66 @@
+// Helpers
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
+// Objects
+//@import './objects/buttons/style';
+
+@import "./helpers/media";
+
+.steps {
+  .below_steps {
+    justify-content: center;
+    .first,
+    .second,
+    .third,
+    .fourth {
+      border-radius: 0;
+      padding: 6rem 3rem;
+      .step_description {
+        text-align: center;
+        color: white;
+        .step_img {
+          font-size: 6rem;
+          color: #ffffff;
+          padding-bottom: 1rem;
+        }
+        .fa {
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+        }
+        .fa:hover {
+          color: #ffffff;
+          transition: all 0.3s;
+          transform: scale(1.1);
+        }
+      }
+      .step_title {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 600;
+        padding: 1rem 0;
+      }
+      .step_desc {
+        font-family: "Poppins", sans-serif;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        margin-bottom: 0;
+        margin-top: 0;
+      }
+    }
+    .first_bg {
+      background-color: #5acda6;
+    }
+    .second_bg {
+      background: #91ac41;
+    }
+    .third_bg {
+      background: #e4b476;
+    }
+    .fourth_bg {
+      background: #f69dad;
+    }
+  }
+}

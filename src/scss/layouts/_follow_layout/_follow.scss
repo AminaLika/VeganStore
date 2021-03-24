@@ -1,0 +1,97 @@
+// Helpers
+@import "./helpers/variables";
+@import "./helpers/mixins";
+
+// Objects
+//@import './objects/buttons/style';
+
+@import "./helpers/media";
+
+.follow {
+  position: relative;
+  .below_follow {
+    height: 585px;
+    .pic {
+      z-index: 3;
+      background: url(../images/strawberry.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: auto;
+      width: 100%;
+    }
+    .pic_info {
+      background: url(../images/fruit.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: auto;
+      width: 100%;
+      .follow_us {
+        position: relative;
+        z-index: 100 !important;
+        margin: 4.25rem;
+
+        .f_title {
+          z-index: 3;
+          font-family: "Poppins", sans-serif;
+          font-weight: 600;
+          line-height: 1.2;
+          margin-bottom: 1.3rem;
+          color: #000000;
+        }
+        .f_text {
+          z-index: 3;
+          font-family: "Poppins", sans-serif;
+          letter-spacing: 0.5px;
+          line-height: 1.2;
+          margin: 0px 0px 55px;
+          color: #8b8b99;
+        }
+        .form {
+          #email {
+            background: #ffffff;
+            color: #8b8b99;
+            border: none;
+            padding: 0.7rem;
+            width: 100%;
+            border-radius: 4px;
+            margin: 0.625rem 0 1rem;
+            font-family: "Poppins", sans-serif;
+            font-size: 1rem;
+          }
+          .btn {
+            background-color: #f69dad;
+            border-color: #f69dad;
+            color: #ffffff;
+            padding: 14px 42px;
+            border-radius: 4px;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.875rem;
+            font-weight: 600;
+          }
+          .btn:hover {
+            background-color: #ffffff;
+            border-color: #f69dad;
+            color: #f69dad;
+            // padding: 14px 42px;
+            // border-radius: 4px;
+            // font-family: "Poppins", sans-serif;
+            // font-size: 0.875rem;
+            // font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .pic_overlay {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #ffffff;
+    opacity: 0.6;
+  }
+}
